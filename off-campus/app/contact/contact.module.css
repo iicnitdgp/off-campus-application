@@ -1,0 +1,268 @@
+.contactPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 2rem 0;
+}
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Contact Information */
+.contactInfo h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.infoCard h3 {
+  color: #1e3c72;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.infoCard > p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contactItem div {
+  flex: 1;
+}
+
+.contactItem strong {
+  color: #1e3c72;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.contactItem p {
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Form Section */
+.formSection h2 {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.formContainer {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #2a5298;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #9ca3af;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(42, 82, 152, 0.3);
+}
+
+.submitBtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactPage {
+    padding: 1rem 0;
+  }
+  
+  .contactContainer {
+    padding: 0 1rem;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .contentWrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .infoCard,
+  .formContainer {
+    padding: 1.5rem;
+  }
+  
+  .contactDetails {
+    gap: 1rem;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .contactItem {
+    gap: 0.75rem;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .contactInfo h2,
+  .formSection h2 {
+    font-size: 1.5rem;
+  }
+  
+  .infoCard h3 {
+    font-size: 1.3rem;
+  }
+  
+  .contactItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

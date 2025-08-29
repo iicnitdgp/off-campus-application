@@ -1,0 +1,344 @@
+/* Update Button */
+.updateBtn {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 48px;
+}
+
+.updateBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(42, 82, 152, 0.3);
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modalContent {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 16px 16px 0 0;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Opportunity List */
+.opportunityList {
+  padding: 2rem;
+}
+
+.opportunityList h3 {
+  margin-bottom: 1.5rem;
+  color: #374151;
+  font-size: 1.25rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.listContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.opportunityItem {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.opportunityItem:hover {
+  background: #f1f5f9;
+  border-color: #2a5298;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(42, 82, 152, 0.15);
+}
+
+.oppHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.oppHeader h4 {
+  margin: 0;
+  color: #1e3c72;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.oppType {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.oppTitle {
+  margin: 0.5rem 0;
+  color: #374151;
+  font-weight: 500;
+}
+
+.oppDetails {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* Update Form */
+.updateForm {
+  padding: 2rem;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.backBtn {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.backBtn:hover {
+  background: #4b5563;
+}
+
+.formHeader h3 {
+  margin: 0;
+  color: #374151;
+  font-size: 1.25rem;
+}
+
+.form {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.fieldset {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.fieldset legend {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputGroup input:focus,
+.inputGroup select:focus,
+.inputGroup textarea:focus {
+  outline: none;
+  border-color: #2a5298;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+}
+
+.checkboxGroup {
+  margin-bottom: 1rem;
+}
+
+.checkboxGroup label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+}
+
+.checkboxGroup input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.submitSection {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #059669, #10b981);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+.submitBtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modalContent {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+  
+  .modalHeader {
+    padding: 1rem 1.5rem;
+  }
+  
+  .opportunityList,
+  .updateForm {
+    padding: 1.5rem;
+  }
+  
+  .listContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .formHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .oppDetails {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,327 @@
+.aboutPage {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.motto {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.motto h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.mottoItems {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.mottoItems span {
+  background: white;
+  color: #1e3c72;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Section Headers */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #1e3c72;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.sectionHeader p {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.buildingInfo {
+  margin-top: 1rem;
+}
+
+.buildingName {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.aboutContent {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.aboutText h3 {
+  font-size: 1.8rem;
+  color: #1e3c72;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.aboutText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+/* Placement Section */
+.placementSection {
+  padding: 4rem 0;
+  background: white;
+}
+
+.placementContent {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.placementGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.placementCard {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.placementCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(30, 60, 114, 0.1);
+  border-color: #2a5298;
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.placementCard h3 {
+  font-size: 1.5rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.placementCard p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Verticals Section */
+.verticalsSection {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.verticalsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.verticalCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.verticalCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(30, 60, 114, 0.1);
+  border-color: #2a5298;
+}
+
+.verticalIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.verticalTitle {
+  font-size: 1.3rem;
+  color: #1e3c72;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.verticalDescription {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  text-align: center;
+}
+
+.contactContent {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contactContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contactContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.contactIcon {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.3rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.1rem;
+  }
+  
+  .mottoItems {
+    gap: 1rem;
+  }
+  
+  .mottoItems span {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+  
+  .placementGrid,
+  .verticalsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .placementCard,
+  .verticalCard {
+    padding: 1.5rem;
+  }
+  
+  .contactInfo {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contactContent h2 {
+    font-size: 2rem;
+  }
+  
+  .hero,
+  .aboutSection,
+  .placementSection,
+  .verticalsSection,
+  .contactSection {
+    padding: 3rem 0;
+  }
+}
